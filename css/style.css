@@ -836,6 +836,44 @@ header {
   cursor: pointer;
   width: 30px;
   height: 30px;
+
+  transition: fill 250ms var(--anim-func);
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  fill: var(--accent-color);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.form {
+}
+.form-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.form-input {
+  width: 448px;
+  height: 40px;
+}
+.modal-icon {
+  position: absolute;
+  left: 0;
+}
+.form-lable {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  /* padding-bottom: 15px; */
 }
 
 /* font-family: 'Raleway', sans-serif;
