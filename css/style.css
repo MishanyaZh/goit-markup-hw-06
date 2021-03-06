@@ -1072,7 +1072,7 @@ header {
 }
 
 .checkbox:checked + .consent-icon {
-  background-image: url(/img/modal/icon-check.svg);
+  background-image: url(./img/modal/icon-check.svg);
   background-color: var(--accent-color);
   background-size: contain;
   fill: var(--accent-color);
