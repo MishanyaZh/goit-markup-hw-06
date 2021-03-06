@@ -677,7 +677,8 @@ header {
   cursor: pointer;
   padding: 10px 62px 10px 29px;
   border-radius: 4px;
-  transition: background-color 250ms var(--anim-func);
+  transition: background-color var(--time-anim-func),
+    color var(--time-anim-func), fill var(--time-anim-func);
 }
 
 .button-footer:focus,
@@ -695,11 +696,14 @@ header {
   top: 50%;
   right: 28px;
   transform: translateY(-50%);
+  fill: var(--white-text-color);
+  transition: background-color var(--time-anim-func),
+    color var(--time-anim-func), fill var(--time-anim-func);
 }
 
-.button-footer:focus,
-.button-footer:hover > .button-icon {
-  fill: currentColor;
+.button-footer:focus ~ .button-icon,
+.button-footer:hover ~ .button-icon {
+  fill: var(--accent-color);
 }
 
 /* STR 2 */
@@ -953,7 +957,7 @@ header {
   width: 448px;
   height: 40px;
 
-  cursor: pointer;
+  /* cursor: pointer; */
 
   padding-left: 42px;
 
