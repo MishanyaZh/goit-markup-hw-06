@@ -82,7 +82,7 @@ header {
   color: var(--title-text-color);
 }
 
-.logo-accent {
+header .logo-accent {
   padding-right: 42px;
 }
 
@@ -559,7 +559,19 @@ header {
 
 .footer-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.logo-accent-footer {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+  margin-bottom: 20px;
 }
 
 .logo-white {
@@ -571,10 +583,8 @@ header {
   flex-direction: column;
 }
 
-.footer-address {
-  padding-top: 20px;
-  padding-bottom: 9px;
-  margin-right: 70px;
+.footer-address-item {
+  margin-bottom: 9px;
 }
 
 .adres-white {
@@ -585,8 +595,9 @@ header {
   color: var(--white-text-color);
 }
 
-.footer-mail {
-  padding-bottom: 9px;
+.nav-cont.footer-mail {
+  margin-bottom: 9px;
+  line-height: 1.7;
 }
 
 .subtitle-footer {
@@ -627,7 +638,7 @@ header {
 }
 
 .subscription {
-  margin-left: 93px;
+  /* margin-left: 93px; */
 }
 
 .footer-form {
@@ -893,8 +904,8 @@ header {
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
 
   padding: 40px;
 
@@ -939,7 +950,7 @@ header {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .form {
@@ -1056,6 +1067,7 @@ header {
 .consent-label {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .checkbox {
@@ -1072,13 +1084,14 @@ header {
 }
 
 .checkbox:checked + .consent-icon {
-  background-image: url(/img/modal/icon-check.svg);
+  background-image: url(../img/modal/icon-check.svg);
   background-color: var(--accent-color);
   background-size: contain;
   fill: var(--accent-color);
   background-origin: border-box;
   border-radius: 4px;
 }
+
 .consent-text {
   color: var(--grey-text-color);
 
